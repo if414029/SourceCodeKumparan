@@ -13,17 +13,12 @@ Simple News Management is a web application to manage news. The web application 
 
 | Method | Action                     | Example                                                       |
 | ------ | -------------------------- | ------------------------------------------------------------- |
-| GET    | Get all news           | http://127.0.0.1:8080/newsList                                  |
-| GET    | Search an news by status | http://127.0.0.1:8080/newsList/publish
-                           |
-| GET    | Search an news by topic | http://127.0.0.1:8080/newsList/Olahraga
-                           |
-| POST   | Write/create a new news | http://127.0.0.1:8080/news
-                                   |
-| PUT    | Update an news          | http://0.0.0.0:8080/news-edit/1 (1 is id of the news)
-				|
-| DELETE | Delete an news          | http://0.0.0.0:8080/news-delete/1 (1 is id of the news)
-				|
+| GET    | Get all news           | http://127.0.0.1:8080/newsList                                    |
+| GET    | Search an news by status | http://127.0.0.1:8080/newsList/publish			      |
+| GET    | Search an news by topic | http://127.0.0.1:8080/newsList/Olahraga                          |
+| POST   | Write/create a new news | http://127.0.0.1:8080/news                                       |
+| PUT    | Update an news          | http://0.0.0.0:8080/news-edit/1 (1 is id of the news)	      |
+| DELETE | Delete an news          | http://0.0.0.0:8080/news-delete/1 (1 is id of the news)          |
 
 ## Endpoint List Topic
 
