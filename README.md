@@ -14,13 +14,16 @@ Simple News Management is a web application to manage news. The web application 
 | Method | Action                     | Example                                                       |
 | ------ | -------------------------- | ------------------------------------------------------------- |
 | GET    | Get all news           | http://127.0.0.1:8080/newsList                                  |
-| GET    | Search an article by status | http://127.0.0.1:8080/newsList/publish
+| GET    | Search an news by status | http://127.0.0.1:8080/newsList/publish
                            |
-| GET    | Search an article by topic | http://127.0.0.1:8080/newsList/Olahraga
+| GET    | Search an news by topic | http://127.0.0.1:8080/newsList/Olahraga
                            |
-| POST   | Write/create a new news | http://127.0.0.1:8080/news                                   |
-| PUT    | Update an news          | http://0.0.0.0:8080/news-edit/1 (1 is id of the news)   |
-| DELETE | Delete an news          | http://0.0.0.0:8080/news-delete/1 (1 is id of the news) |
+| POST   | Write/create a new news | http://127.0.0.1:8080/news
+                                   |
+| PUT    | Update an news          | http://0.0.0.0:8080/news-edit/1 (1 is id of the news)
+				|
+| DELETE | Delete an news          | http://0.0.0.0:8080/news-delete/1 (1 is id of the news)
+				|
 
 ## Endpoint List Topic
 
@@ -106,3 +109,16 @@ $ python run_app.py
 If the database have been installed, just run the second command.
 
 ## Test The API
+If you want to test all method uncommend and commend this code one by one and run again
+```
+$ python run_app.py
+
+```
+	from api._01_get_topic import app
+	# from api._02_post_topic import app
+	# from api._03_put_topic import app
+	# from api._04_delete_topic import app
+	# from api._01_get_news import app
+	# from api._02_post_news import app	
+	# from api._03_put_news import app	
+	# from api._04_delete_news import app
